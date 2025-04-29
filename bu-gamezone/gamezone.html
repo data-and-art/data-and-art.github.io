@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUGZ GameZone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .logo {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      height: 60px;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .game-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .game-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .game-card .info {
+      padding: 1rem;
+    }
+    .game-card h2 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    .game-card p {
+      margin: 0.25rem 0;
+      font-size: 0.95rem;
+    }
+    .play-button {
+      margin-top: auto;
+      text-align: center;
+      background: #3498db;
+      color: white;
+      padding: 0.75rem;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+      border-top: 1px solid #ddd;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="bangor-logo-white.svg" alt="Bangor University Logo" class="logo">
+    <h1>BU GameZone - LearnAndPlayBangor</h1>
+    <p>A digital hub for HTML5 games, showcasing work created by students at Bangor University. </p>
+  </p>The hub is part playground, part portfolio, part learning. It is a space for our students to learn, and others to play and be inspired. Work created by students and staff. Most are quick 2 minute games, demonstrating ideas and creativity.</p>
+  </header>
+
+  <main class="game-grid">
+    <div class="game-card">
+      <img src="games/chain-link-bounce2.jpg" alt="Game Thumbnail">
+      <div class="info">
+        <h2>Chain link bounce</h2>
+        <p><strong>Author:</strong> Jonathan Roberts</p>
+        <p><strong>Course:</strong> BSc Computer Science</p>
+        <p><strong>Concept:</strong> A circular rink, with bouncing balls. Bounce the balls off the links, before they fail, and you get overwhelmed by balls.</p>
+        <p><strong>Controls:</strong> Left/right arrows to rotate.</p>
+        
+      </div>
+      <a href="games/chain-link-bounce2.html" class="play-button" target="_blank">▶️ Play Now</a>
+    </div>
+<div class="game-card">
+      <img src="games/defend-the-platform-smooth.jpg" alt="Game Thumbnail">
+      <div class="info">
+        <h2>Protect the platform</h2>
+        <p><strong>Author:</strong> Joanthan Roberts</p>
+        <p><strong>Course:</strong> BSc Computer Science</p>
+        <p><strong>Concept:</strong> A retro-style space shooter. Rotate the gun turret to protect your space station from the space flies.</p>
+        <p><strong>Controls:</strong>Rotate left/right with left/right arrow keys. Move faster with Shift. Space to fire. </p>
+        
+      </div>
+      <a href="games/defend-the-platform-smooth.html" class="play-button" target="_blank">▶️ Play Now</a>
+    </div>
+    <!-- Additional game cards would follow the same format -->
+  </main>
+
+  <footer>
+    BUGZ GameZone | © Bangor University | <a href="#" style="color: #fff; text-decoration: underline;">Contact</a> | <a href="#" style="color: #fff; text-decoration: underline;">More detail</a>
+  </footer>
+</body>
+</html>
