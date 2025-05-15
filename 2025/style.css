@@ -1,0 +1,227 @@
+/* Base Reset and Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  color: #005ea5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header and Banner */
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fdfdfd;
+  flex-wrap: wrap;
+}
+
+.banner-image {
+  height: auto;
+  flex: 1;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+.logo {
+  height: 40px;
+  margin-left: auto;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border-top: 1px solid #eee;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+footer a {
+  color: #005ea5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+}
+
+.callout {
+  text-align: center;
+  margin: 60px auto;
+  padding: 30px 20px;
+  max-width: 700px;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.callout::before,
+.callout::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #999, transparent);
+  margin: 20px 0;
+}
+
+.photo-callout {
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.gallery-frame img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.caption {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#exhibits {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#exhibits h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 8px;
+}
+
+.exhibit-list {
+  list-style-type: disc;
+  padding-left: 1.3em;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.exhibit-list li {
+  margin-bottom: 16px;
+}
+
+.exhibit-list strong {
+  color: #111;
+  font-weight: 700;
+}
+
+.exhibit-list em {
+  font-style: italic;
+  color: #666;
+}
