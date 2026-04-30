@@ -204,7 +204,7 @@ footer a {
   padding-bottom: 8px;
 }
 
-.exhibit-list {
+.TTexhibit-list {
   list-style-type: disc;
   padding-left: 1.3em;
   color: #333;
@@ -212,16 +212,84 @@ footer a {
   line-height: 1.6;
 }
 
-.exhibit-list li {
+.TTexhibit-list li {
   margin-bottom: 16px;
 }
 
-.exhibit-list strong {
+.TTexhibit-list strong {
   color: #111;
   font-weight: 700;
 }
 
-.exhibit-list em {
+.TTexhibit-list em {
   font-style: italic;
   color: #666;
 }
+
+/* ***************************************************/
+
+/* Remove default bullets */
+.exhibit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each exhibit row */
+.exhibit-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Small left image (about 3 lines high) */
+.exhibit-thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+
+  border-radius: 6px;
+  flex-shrink: 0;
+
+  background: #eee;
+}
+
+/* Text block */
+.exhibit-text {
+  flex: 1;
+}
+
+/* Title + author on one line */
+.exhibit-title {
+  font-weight: bold;
+  font-size: 1em;
+  display: inline;
+}
+
+.exhibit-author {
+  font-style: italic;
+  color: #555;
+  margin-left: 6px;
+  display: inline;
+}
+
+/* Description */
+.exhibit-summary {
+  margin-top: 4px;
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Optional: tighter spacing on small screens */
+@media (max-width: 600px) {
+  .exhibit-thumb {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
